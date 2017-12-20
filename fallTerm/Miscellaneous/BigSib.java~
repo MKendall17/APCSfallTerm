@@ -1,0 +1,11 @@
+public class BigSib {
+    public static void main(String[] commandLine) {
+        
+    }
+    public static void greet(String person) {
+	System.out.println( "hello, freshperson "
+			    + person
+			    + "! How are you doon?"
+			    );
+    }
+}

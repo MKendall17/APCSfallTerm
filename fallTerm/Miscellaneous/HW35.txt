@@ -1,0 +1,1 @@
+String manipulation  is central to many tasks, so there are many String methods. As you have seen before in studying programing, you will be asked to program solutions for which built-in methods exists. But you learn nothing by calling a method instead of programming it, so restrict yourself to length and substring for these initial problems.

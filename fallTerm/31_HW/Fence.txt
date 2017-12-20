@@ -1,0 +1,72 @@
+/******************************************************************************
+ * Initial looping problem, then...
+ * Represent a fence with a particular number of rails, with supporting posts
+ ******************************************************************************/
+
+public class Fence {
+    
+    // for basic loop practice:
+    public static int sumThrough( int upperBound){
+        int counter = 1;
+        int sum = 0;
+        while (counter <= upperBound) {
+            sum = sum + counter;
+
+            //update
+            counter = counter + 1;
+        }
+
+        return sum;
+    }
+    
+    // field(s)
+    int rails;
+    
+    public Fence( int railsParam){
+        // System.out.println( "Replace this method body with code to " 
+        //                   + "build a fence with " + rails + " sections.");
+        rails = railsParam;
+    }
+
+    // Produce the output specified in UserOfFence.
+    public String toString() { 
+        int counter = 0;
+        String output = "|";
+
+        while (counter < rails) {
+
+            output = output + "--|";
+
+            //update
+            counter = counter + 1;
+        }
+
+        return output;
+    }
+}
+
+/******************************************************************************
+ * Exercise the Fence class
+ ******************************************************************************/
+
+public class UserOfFence {
+
+    public static void main(String[] commandLine) {
+
+        // for basic loop practice:
+        System.out.println( Fence.sumThrough(  3) + " ...expecting  6 \n"
+                          + Fence.sumThrough( 10) + " ...expecting 55 \n"
+                          + Fence.sumThrough(  0) + " ...expecting  0 \n"
+                          );
+        // needs Fence.toString()
+        Fence f;
+        f = new Fence(3);
+        System.out.println( f + " ...expecting |--|--|--|");
+
+        f = new Fence(1);
+        System.out.println( f + " ...expecting |--|");
+
+        f = new Fence(0);
+        System.out.println( f + " ...expecting |" );
+    }
+}

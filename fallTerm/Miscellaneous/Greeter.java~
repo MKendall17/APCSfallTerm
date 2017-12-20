@@ -1,0 +1,7 @@
+public class Greeter {
+    public static void main(String[] args) {
+	BigSib.greet("Gib");
+	BigSib.greet("Allison");
+	BigSib.greet("Jimbo");
+    }
+}
